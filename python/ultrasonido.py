@@ -20,7 +20,7 @@ TRIG = 23                                  #pin 23 como TRIG
 ECHO = 24                                  #pin 24 como ECHO
 V    = 34300			    			   # Velocidad del sonido 34300cm/s	
 
-print "Medicion de la distancia en curso"
+print("Medicion de la distancia en curso")
 
 GPIO.setup(TRIG,GPIO.OUT)                  #TRIG como salida
 GPIO.setup(ECHO,GPIO.IN)                   #ECHO como entrada
