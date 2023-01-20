@@ -26,7 +26,7 @@ GPIO.setup(TRIG,GPIO.OUT)                  #TRIG como salida
 GPIO.setup(ECHO,GPIO.IN)                   #ECHO como entrada
 
 GPIO.output(TRIG, False)                   #TRIG en estado bajo
-print "Espere que el sensor se estabilice"
+print ("Espere que el sensor se estabilice")
 time.sleep(2)                              #Esperar 2 segundos
 
 GPIO.output(TRIG, True)                    #TRIG en estado alto
@@ -46,9 +46,9 @@ distancia = round(distancia, 2)            #Se redondea a dos decimales
 
 if distancia > 2 and distancia < 400:      #Comprueba si la distancia está dentro del rango
 
-  print "Distancia: ",distancia,"cm"       #Imprime la distancia 
+  print ("Distancia: ",distancia,"cm")       #Imprime la distancia 
 
 else:
-  print "Fuera de Rango"                   #Imprime fuera de rango
+  print( "Fuera de Rango" )                  #Imprime fuera de rango
 
 GPIO.cleanup()							   #Limpia los pines	
